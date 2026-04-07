@@ -1,6 +1,8 @@
+This library helps user update the .MSBL derived header file based firmware update of the MAX32664c Chip which is usually not upto date with the current data sheet versions.
+The code is designed to be used for Arduino boards and is tested specifically with nRF52 based boards like Adafruit or Xiao
 Expected output when Firmware is not updated (ex. FW: 30.2.2) is as follows:
 On serial port: ->
-
+```text
 === MAX32664C firmware loader ===
 Current hub FW: 30.2.2
 Starting firmware update...
@@ -43,3 +45,4 @@ Firmware transfer complete
 Firmware after update: 30.13.31
 Firmware update completed successfully
 Current hub FW: 30.13.31
+```
