@@ -57,7 +57,8 @@ Clone the repository:
 git clone https://github.com/Harshonar/Max32664c_firmware_update_tool.git
 cd Max32664c_firmware_update_tool
 ```
-``` Note: Temorary only, update the buffersize to 8448, e.g. ringbuffer.h (nrf52 adafruit arduino BSP)
+Note: Temorary only, update the buffersize to 8448, e.g. ringbuffer.h (nrf52 adafruit arduino BSP)
+```
 #ifndef SERIAL_BUFFER_SIZE
 #define SERIAL_BUFFER_SIZE 8448
 #endif
