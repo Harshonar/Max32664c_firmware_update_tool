@@ -1,4 +1,4 @@
-# MAX32664 Universal Firmware Tool
+# MAX32664c Universal Firmware Tool
 
 Flash and manage MAX32664 sensor hub firmware 
 without requiring MAX32630FTHR or proprietary tools.
