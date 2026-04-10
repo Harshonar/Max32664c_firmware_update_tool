@@ -10,7 +10,7 @@ Updating firmware on the MAX32664 is unnecessarily difficult.
 
 Official tools:
 - Require specific hardware (e.g. MAX32630FTHR)
-- Are not easily scriptable
+- Are not easily scriptable (e.g. generic Arduino style code with .h file instead of .msbl)
 - Are difficult to integrate into custom workflows
 
 This tool solves that.
