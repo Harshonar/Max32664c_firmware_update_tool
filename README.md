@@ -1,11 +1,61 @@
-# MAX32664c Universal Firmware Tool
+# MAX32664 Universal Firmware Tool
 
-Flash and manage MAX32664 sensor hub firmware 
-without requiring MAX32630FTHR or proprietary tools.
+A hardware-agnostic, scriptable firmware update tool for MAX32664 sensor hubs — without requiring Maxim reference boards.
 
-## Why this exists
-Official tools are hardware-dependent and difficult to integrate.
-This tool provides a simple, scriptable interface for custom boards.
+---
+
+## 🚀 Why this exists
+
+Updating firmware on the MAX32664 is unnecessarily difficult.
+
+Official tools:
+- Require specific hardware (e.g. MAX32630FTHR)
+- Are not easily scriptable
+- Are difficult to integrate into custom workflows
+
+This tool solves that.
+
+> It enables reliable firmware updates on **custom hardware designs** using a clean and developer-friendly interface.
+
+---
+
+## ✨ Key Features
+
+- ✅ Works with **custom boards** (no MAX32630FTHR required)
+- ✅ Simple, scriptable interface (ideal for automation)
+- ✅ Handles **bootloader transitions (MFIO / RST)**
+- ✅ Abstracts low-level I2C flashing protocol
+- ✅ Designed for **real-world embedded development workflows**
+- ✅ Lightweight and easy to integrate
+
+---
+
+## 🧠 Who is this for
+
+- Embedded engineers working with MAX32664
+- Wearable / biosensing developers
+- Researchers building custom health devices
+- Teams frustrated with official flashing workflows
+
+---
+
+## 🔧 Supported Hardware
+
+- MAX32664C (primary target)
+- Compatible with:
+  - MAX8614x-based systems
+  - Custom I2C host MCUs (nRF52, STM32, etc.)
+
+---
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Harshonar/Max32664c_firmware_update_tool.git
+cd Max32664c_firmware_update_tool
+```
 
 This library helps user to update the Max32664c over I2C with the provided .MSBL library derived header file, as the chip shipped with is usually not upto date with the current data sheet versions (30.13.xx+) .
 The code is designed to be used for Arduino boards and is tested specifically with nRF52 based boards like Adafruit or Xiao
