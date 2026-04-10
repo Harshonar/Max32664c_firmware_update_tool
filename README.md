@@ -43,8 +43,9 @@ This tool solves that.
 
 - MAX32664C (primary target)
 - Compatible with:
-  - MAX8614x-based systems
+  - MAX8614x and MAX86161 based systems
   - Custom I2C host MCUs (nRF52, STM32, etc.)
+  - Arduino compatible (!! min flash size 512kB needed!! )
 
 ---
 
