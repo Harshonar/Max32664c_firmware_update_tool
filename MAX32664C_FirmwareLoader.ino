@@ -4,8 +4,8 @@
 #include "max32664c_firmware_image.h"
 
 #define HUB_ADDR 0x55
-#define MFIO D7
-#define RSTN D6
+#define MFIO D7 //Put your Pin
+#define RSTN D6 //Put your Pin
 
 static const uint16_t HUB_I2C_CLOCK_HZ = 400000;
 static const uint32_t FW_PAGE_SIZE = 8192;
