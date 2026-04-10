@@ -1,3 +1,12 @@
+# MAX32664 Universal Firmware Tool
+
+Flash and manage MAX32664 sensor hub firmware 
+without requiring MAX32630FTHR or proprietary tools.
+
+## Why this exists
+Official tools are hardware-dependent and difficult to integrate.
+This tool provides a simple, scriptable interface for custom boards.
+
 This library helps user to update the Max32664c over I2C with the provided .MSBL library derived header file, as the chip shipped with is usually not upto date with the current data sheet versions (30.13.xx+) .
 The code is designed to be used for Arduino boards and is tested specifically with nRF52 based boards like Adafruit or Xiao
 Expected output when Firmware is not updated (ex. FW: 30.2.2) is as follows:
