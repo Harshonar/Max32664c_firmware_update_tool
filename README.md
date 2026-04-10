@@ -57,7 +57,11 @@ Clone the repository:
 git clone https://github.com/Harshonar/Max32664c_firmware_update_tool.git
 cd Max32664c_firmware_update_tool
 ```
-
+``` Note: Temorary only, update the buffersize to 8448, e.g. ringbuffer.h (nrf52 adafruit arduino BSP)
+#ifndef SERIAL_BUFFER_SIZE
+#define SERIAL_BUFFER_SIZE 8448
+#endif
+```
 This library helps user to update the Max32664c over I2C with the provided .MSBL library derived header file, as the chip shipped with is usually not upto date with the current data sheet versions (30.13.xx+) .
 The code is designed to be used for Arduino boards and is tested specifically with nRF52 based boards like Adafruit or Xiao
 Expected output when Firmware is not updated (ex. FW: 30.2.2) is as follows:
